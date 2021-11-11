@@ -5,10 +5,13 @@
     Dim InsertNicknamePlayer2 As String
     Dim Player1Select As Boolean = False
     Dim Player2Select As Boolean = False
-    'Game
+    'Game Stats
     Dim JogadorClass As New JogadorClass
     Dim Player1Stats As String
     Dim Player2Stats As String
+    'Game Gameplay
+    Dim Player1Imput As Integer
+    Dim Player2Imput As Integer
 
     Private Sub btConfirm_Click(sender As Object, e As EventArgs) Handles btConfirm.Click
 
@@ -84,4 +87,20 @@ JogadorClass.segundoJogadorDerrotas.ToString
         btDisplayWinner1.Visible = False
         btDisplayWinner2.Visible = False
     End Sub
+
+    Private Sub btPlayer1Confirm_Click(sender As Object, e As EventArgs) Handles btPlayer1Confirm.Click
+        Dim _imput = tbNumImputPlayer1.Text
+        Try
+            _imput = Convert.ToInt32(_imput)
+        Catch ex As Exception
+            tbNumImputPlayer1.Text = "Apenas numeros"
+        End Try
+
+
+    End Sub
+
+    Private Sub btPlayer2Confirm_Click(sender As Object, e As EventArgs) Handles btPlayer2Confirm.Click
+
+    End Sub
+
 End Class
