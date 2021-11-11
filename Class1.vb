@@ -7,16 +7,19 @@ Public Class JogadorClass
     Public primeiroJogadorNick As String
     Public primeiroJogadorVitorias As Short
     Public primeiroJogadorJogadas As Short
+    Public primeiroJogadorDerrotas As Integer
 
     Public segundoJogadorNum As Integer
     Public segundoJogadorNick As String
     Public segundoJogadorVitorias As Short
     Public segundoJogadorJogadas As Short
+    Public segundoJogadorDerrotas As Integer
 
     Public jogadorNick As String
     Public jogadorVitorias As Short
     Public JogadorJogadas As Short
-    Public jogadorWinRate
+    Public jogadorWinRate As String
+    Public jogadorDefeat As String
 
     Sub SetRandomNumVaule(_imput)
         valorAleatorioGerado = _imput
@@ -33,28 +36,33 @@ Public Class JogadorClass
     Sub SetPlayerOneNum(_imput As Integer)
         primeiroJogadorNum = _imput
     End Sub
-    Sub SetPlayerOneNick(_imput As Integer)
+    Sub SetPlayerOneNick(_imput As String)
         primeiroJogadorNick = _imput
     End Sub
     Sub SetPlayerOneWins(_imput As Integer)
         primeiroJogadorVitorias = _imput
     End Sub
     Sub SetPlayerOnePlaycount(_imput As Integer)
-        primeiroJogadorVitorias = _imput
+        primeiroJogadorJogadas = _imput
     End Sub
-
+    Sub SetPlayerOneDefeats(_imput As Integer)
+        primeiroJogadorDerrotas = _imput
+    End Sub
     'Setar valores jogador 2 Algums são inutilizados
     Sub SetPlayerTwoNum(_imput As Integer)
         segundoJogadorNum = _imput
     End Sub
-    Sub SetPlayerTwoNick(_imput As Integer)
+    Sub SetPlayerTwoNick(_imput As String)
         segundoJogadorNick = _imput
     End Sub
     Sub SetPlayerTwoWins(_imput As Integer)
         segundoJogadorVitorias = _imput
     End Sub
-    Sub SetPlayerTwoHitcount(_imput As Integer)
-        segundoJogadorVitorias = _imput
+    Sub SetPlayerTwoPlaycount(_imput As Integer)
+        segundoJogadorJogadas = _imput
+    End Sub
+    Sub SetPlayerTwoDefeats(_imput As Integer)
+        segundoJogadorDerrotas = _imput
     End Sub
 
     'Setar valores jogador
@@ -64,11 +72,14 @@ Public Class JogadorClass
     Sub SetPlayerWins(_imput As Short)
         jogadorVitorias = _imput
     End Sub
-    Sub SetPlayerHitcount(_imput As Short)
+    Sub SetPlayerPlaycount(_imput As Short)
         JogadorJogadas = _imput
     End Sub
     Sub SetPlayerWinrate(_imput As Short)
         jogadorWinRate = _imput
+    End Sub
+    Sub SetPlayerDefeats(_imput As Integer)
+        jogadorDefeat = _imput
     End Sub
 
     'Procedimentos

@@ -33,33 +33,33 @@ Partial Class frmGame
         Me.btPlayer2Confirm = New System.Windows.Forms.Button()
         Me.btDisplayWinner2 = New System.Windows.Forms.Button()
         Me.btDisplayWinner1 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btRandomResult = New System.Windows.Forms.Button()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbNickname
         '
-        Me.tbNickname.Location = New System.Drawing.Point(321, 381)
+        Me.tbNickname.Location = New System.Drawing.Point(334, 381)
         Me.tbNickname.Name = "tbNickname"
         Me.tbNickname.Size = New System.Drawing.Size(172, 23)
         Me.tbNickname.TabIndex = 0
-        Me.tbNickname.Text = "Insira seu nickname Jogador  1"
+        Me.tbNickname.Text = "Nome Jogador 1"
         Me.tbNickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'pbLogo
         '
         Me.pbLogo.Image = Global.LuckyGame.My.Resources.Resources.lucky_game_logo
-        Me.pbLogo.Location = New System.Drawing.Point(312, 205)
+        Me.pbLogo.Location = New System.Drawing.Point(265, 62)
         Me.pbLogo.Name = "pbLogo"
-        Me.pbLogo.Size = New System.Drawing.Size(264, 142)
+        Me.pbLogo.Size = New System.Drawing.Size(327, 233)
         Me.pbLogo.TabIndex = 1
         Me.pbLogo.TabStop = False
         '
         'btConfirm
         '
-        Me.btConfirm.Location = New System.Drawing.Point(370, 410)
+        Me.btConfirm.Location = New System.Drawing.Point(369, 410)
         Me.btConfirm.Name = "btConfirm"
-        Me.btConfirm.Size = New System.Drawing.Size(75, 23)
+        Me.btConfirm.Size = New System.Drawing.Size(91, 26)
         Me.btConfirm.TabIndex = 2
         Me.btConfirm.Text = "Confirm"
         Me.btConfirm.UseVisualStyleBackColor = True
@@ -134,21 +134,22 @@ Partial Class frmGame
         Me.btDisplayWinner1.Text = "WINNER"
         Me.btDisplayWinner1.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btRandomResult
         '
-        Me.Button1.Location = New System.Drawing.Point(334, 120)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(183, 120)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btRandomResult.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btRandomResult.Location = New System.Drawing.Point(343, 137)
+        Me.btRandomResult.Name = "btRandomResult"
+        Me.btRandomResult.Size = New System.Drawing.Size(183, 120)
+        Me.btRandomResult.TabIndex = 12
+        Me.btRandomResult.Text = "0"
+        Me.btRandomResult.UseVisualStyleBackColor = True
         '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(804, 448)
+        Me.Controls.Add(Me.btRandomResult)
         Me.Controls.Add(Me.btDisplayWinner1)
         Me.Controls.Add(Me.btDisplayWinner2)
         Me.Controls.Add(Me.pbLogo)
@@ -161,7 +162,7 @@ Partial Class frmGame
         Me.Controls.Add(Me.btConfirm)
         Me.Controls.Add(Me.tbNickname)
         Me.Name = "frmGame"
-        Me.Text = "Form1"
+        Me.Text = "LuckyGame"
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -179,5 +180,5 @@ Partial Class frmGame
     Friend WithEvents btPlayer2Confirm As Button
     Friend WithEvents btDisplayWinner2 As Button
     Friend WithEvents btDisplayWinner1 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btRandomResult As Button
 End Class
