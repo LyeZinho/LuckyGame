@@ -15,6 +15,9 @@ Public Class JogadorClass
     Public segundoJogadorJogadas As Short
     Public segundoJogadorDerrotas As Integer
 
+    'Variaveis valores jogador unificado
+    'variaveis usadas apenas na proxima versão
+    'quando os status online será ativada
     Public jogadorNick As String
     Public jogadorVitorias As Short
     Public JogadorJogadas As Short
@@ -27,10 +30,6 @@ Public Class JogadorClass
     'Nota poderia ser gerado um construtor porem
     'muitos dados seriam desnessesario serem agrupados
 
-    Function RandNumber()
-        Dim Rd As New Random()
-        Return Rd.Next(1, 100)
-    End Function
 
     'Setar valores jogador 1 Algums são inutilizados
     Sub SetPlayerOneNum(_imput As Integer)
@@ -65,7 +64,9 @@ Public Class JogadorClass
         segundoJogadorDerrotas = _imput
     End Sub
 
-    'Setar valores jogador
+    'Setar valores jogador unificado
+    'funções usadas apenas na proxima versão
+    'quando os status online será ativada
     Sub SetPlayerNick(_imput As String)
         jogadorNick = _imput
     End Sub
@@ -81,6 +82,12 @@ Public Class JogadorClass
     Sub SetPlayerDefeats(_imput As Integer)
         jogadorDefeat = _imput
     End Sub
+
+
+    Function RandNumber()
+        Dim Rd As New Random()
+        Return Rd.Next(1, 100)
+    End Function
 
     'Procedimentos
     Function ProximidadeJogo() As Integer
