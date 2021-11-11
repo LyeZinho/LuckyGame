@@ -24,6 +24,10 @@ Public Class JogadorClass
     'Nota poderia ser gerado um construtor porem
     'muitos dados seriam desnessesario serem agrupados
 
+    Function RandNumber()
+        Dim Rd As New Random()
+        Return Rd.Next(1, 100)
+    End Function
 
     'Setar valores jogador 1 Algums são inutilizados
     Sub SetPlayerOneNum(_imput As Integer)

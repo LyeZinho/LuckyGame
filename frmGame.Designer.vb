@@ -31,25 +31,27 @@ Partial Class frmGame
         Me.tbNumImputPlayer1 = New System.Windows.Forms.TextBox()
         Me.btPlayer1Confirm = New System.Windows.Forms.Button()
         Me.btPlayer2Confirm = New System.Windows.Forms.Button()
-        Me.btDisplayGameResult = New System.Windows.Forms.Button()
         Me.btDisplayWinner2 = New System.Windows.Forms.Button()
         Me.btDisplayWinner1 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbNickname
         '
-        Me.tbNickname.Location = New System.Drawing.Point(337, 381)
+        Me.tbNickname.Location = New System.Drawing.Point(321, 381)
         Me.tbNickname.Name = "tbNickname"
-        Me.tbNickname.Size = New System.Drawing.Size(141, 23)
+        Me.tbNickname.Size = New System.Drawing.Size(172, 23)
         Me.tbNickname.TabIndex = 0
+        Me.tbNickname.Text = "Insira seu nickname Jogador  1"
+        Me.tbNickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'pbLogo
         '
         Me.pbLogo.Image = Global.LuckyGame.My.Resources.Resources.lucky_game_logo
-        Me.pbLogo.Location = New System.Drawing.Point(161, -59)
+        Me.pbLogo.Location = New System.Drawing.Point(312, 205)
         Me.pbLogo.Name = "pbLogo"
-        Me.pbLogo.Size = New System.Drawing.Size(500, 434)
+        Me.pbLogo.Size = New System.Drawing.Size(264, 142)
         Me.pbLogo.TabIndex = 1
         Me.pbLogo.TabStop = False
         '
@@ -66,23 +68,23 @@ Partial Class frmGame
         '
         Me.btPlayer1Stats.Location = New System.Drawing.Point(12, 235)
         Me.btPlayer1Stats.Name = "btPlayer1Stats"
-        Me.btPlayer1Stats.Size = New System.Drawing.Size(100, 169)
+        Me.btPlayer1Stats.Size = New System.Drawing.Size(167, 169)
         Me.btPlayer1Stats.TabIndex = 3
         Me.btPlayer1Stats.Text = "N/A"
         Me.btPlayer1Stats.UseVisualStyleBackColor = True
         '
         'btPlayer2Stats
         '
-        Me.btPlayer2Stats.Location = New System.Drawing.Point(688, 235)
+        Me.btPlayer2Stats.Location = New System.Drawing.Point(631, 235)
         Me.btPlayer2Stats.Name = "btPlayer2Stats"
-        Me.btPlayer2Stats.Size = New System.Drawing.Size(100, 169)
+        Me.btPlayer2Stats.Size = New System.Drawing.Size(157, 169)
         Me.btPlayer2Stats.TabIndex = 4
         Me.btPlayer2Stats.Text = "N/A"
         Me.btPlayer2Stats.UseVisualStyleBackColor = True
         '
         'tbNumImputPlayer2
         '
-        Me.tbNumImputPlayer2.Location = New System.Drawing.Point(679, 110)
+        Me.tbNumImputPlayer2.Location = New System.Drawing.Point(656, 110)
         Me.tbNumImputPlayer2.Name = "tbNumImputPlayer2"
         Me.tbNumImputPlayer2.Size = New System.Drawing.Size(109, 23)
         Me.tbNumImputPlayer2.TabIndex = 5
@@ -90,7 +92,7 @@ Partial Class frmGame
         '
         'tbNumImputPlayer1
         '
-        Me.tbNumImputPlayer1.Location = New System.Drawing.Point(12, 110)
+        Me.tbNumImputPlayer1.Location = New System.Drawing.Point(28, 110)
         Me.tbNumImputPlayer1.Name = "tbNumImputPlayer1"
         Me.tbNumImputPlayer1.Size = New System.Drawing.Size(111, 23)
         Me.tbNumImputPlayer1.TabIndex = 6
@@ -100,55 +102,55 @@ Partial Class frmGame
         '
         Me.btPlayer1Confirm.Location = New System.Drawing.Point(12, 159)
         Me.btPlayer1Confirm.Name = "btPlayer1Confirm"
-        Me.btPlayer1Confirm.Size = New System.Drawing.Size(111, 23)
+        Me.btPlayer1Confirm.Size = New System.Drawing.Size(167, 43)
         Me.btPlayer1Confirm.TabIndex = 7
         Me.btPlayer1Confirm.Text = "Confirm"
         Me.btPlayer1Confirm.UseVisualStyleBackColor = True
         '
         'btPlayer2Confirm
         '
-        Me.btPlayer2Confirm.Location = New System.Drawing.Point(679, 159)
+        Me.btPlayer2Confirm.Location = New System.Drawing.Point(631, 159)
         Me.btPlayer2Confirm.Name = "btPlayer2Confirm"
-        Me.btPlayer2Confirm.Size = New System.Drawing.Size(111, 23)
+        Me.btPlayer2Confirm.Size = New System.Drawing.Size(157, 43)
         Me.btPlayer2Confirm.TabIndex = 8
         Me.btPlayer2Confirm.Text = "Confirm"
         Me.btPlayer2Confirm.UseVisualStyleBackColor = True
         '
-        'btDisplayGameResult
-        '
-        Me.btDisplayGameResult.Location = New System.Drawing.Point(266, 52)
-        Me.btDisplayGameResult.Name = "btDisplayGameResult"
-        Me.btDisplayGameResult.Size = New System.Drawing.Size(252, 207)
-        Me.btDisplayGameResult.TabIndex = 9
-        Me.btDisplayGameResult.Text = "N/A"
-        Me.btDisplayGameResult.UseVisualStyleBackColor = True
-        '
         'btDisplayWinner2
         '
-        Me.btDisplayWinner2.Location = New System.Drawing.Point(688, 40)
+        Me.btDisplayWinner2.Location = New System.Drawing.Point(631, 40)
         Me.btDisplayWinner2.Name = "btDisplayWinner2"
-        Me.btDisplayWinner2.Size = New System.Drawing.Size(89, 48)
+        Me.btDisplayWinner2.Size = New System.Drawing.Size(157, 48)
         Me.btDisplayWinner2.TabIndex = 10
         Me.btDisplayWinner2.Text = "WINNER"
         Me.btDisplayWinner2.UseVisualStyleBackColor = True
         '
         'btDisplayWinner1
         '
-        Me.btDisplayWinner1.Location = New System.Drawing.Point(23, 40)
+        Me.btDisplayWinner1.Location = New System.Drawing.Point(12, 40)
         Me.btDisplayWinner1.Name = "btDisplayWinner1"
-        Me.btDisplayWinner1.Size = New System.Drawing.Size(89, 48)
+        Me.btDisplayWinner1.Size = New System.Drawing.Size(167, 48)
         Me.btDisplayWinner1.TabIndex = 11
         Me.btDisplayWinner1.Text = "WINNER"
         Me.btDisplayWinner1.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(334, 120)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(183, 120)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btDisplayWinner1)
         Me.Controls.Add(Me.btDisplayWinner2)
-        Me.Controls.Add(Me.btDisplayGameResult)
         Me.Controls.Add(Me.pbLogo)
         Me.Controls.Add(Me.btPlayer2Confirm)
         Me.Controls.Add(Me.btPlayer1Confirm)
@@ -175,7 +177,7 @@ Partial Class frmGame
     Friend WithEvents tbNumImputPlayer1 As TextBox
     Friend WithEvents btPlayer1Confirm As Button
     Friend WithEvents btPlayer2Confirm As Button
-    Friend WithEvents btDisplayGameResult As Button
     Friend WithEvents btDisplayWinner2 As Button
     Friend WithEvents btDisplayWinner1 As Button
+    Friend WithEvents Button1 As Button
 End Class
