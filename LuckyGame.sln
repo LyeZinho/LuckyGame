@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LuckyGame", "LuckyGame.vbproj", "{296824C4-06E4-4444-9406-70550C762CCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{296824C4-06E4-4444-9406-70550C762CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296824C4-06E4-4444-9406-70550C762CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296824C4-06E4-4444-9406-70550C762CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296824C4-06E4-4444-9406-70550C762CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25458F27-1289-4F3D-AE09-8AA30980A2AA}
+	EndGlobalSection
+EndGlobal
