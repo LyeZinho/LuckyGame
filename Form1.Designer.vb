@@ -29,12 +29,14 @@ Partial Class LuckyGame
         Me.btNameTagPlayerOne = New System.Windows.Forms.Button()
         Me.btNameTagPlayerTwo = New System.Windows.Forms.Button()
         Me.btPlayerTwoImputBox = New System.Windows.Forms.TextBox()
+        Me.btStatsDisplayPlayerOne = New System.Windows.Forms.Button()
+        Me.btStatsDisplayPlayerTwo = New System.Windows.Forms.Button()
         CType(Me.ptbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ptbLogo
         '
-        Me.ptbLogo.Location = New System.Drawing.Point(291, 172)
+        Me.ptbLogo.Location = New System.Drawing.Point(291, 167)
         Me.ptbLogo.Name = "ptbLogo"
         Me.ptbLogo.Size = New System.Drawing.Size(190, 160)
         Me.ptbLogo.TabIndex = 0
@@ -63,6 +65,7 @@ Partial Class LuckyGame
         Me.btPlayerOneImputBox.Name = "btPlayerOneImputBox"
         Me.btPlayerOneImputBox.Size = New System.Drawing.Size(100, 23)
         Me.btPlayerOneImputBox.TabIndex = 3
+        Me.btPlayerOneImputBox.Text = "Valor de 1 a 100"
         '
         'btNameTagPlayerOne
         '
@@ -70,7 +73,7 @@ Partial Class LuckyGame
         Me.btNameTagPlayerOne.Name = "btNameTagPlayerOne"
         Me.btNameTagPlayerOne.Size = New System.Drawing.Size(125, 57)
         Me.btNameTagPlayerOne.TabIndex = 5
-        Me.btNameTagPlayerOne.Text = "Button1"
+        Me.btNameTagPlayerOne.Text = "PlayerNickname"
         Me.btNameTagPlayerOne.UseVisualStyleBackColor = True
         '
         'btNameTagPlayerTwo
@@ -79,7 +82,7 @@ Partial Class LuckyGame
         Me.btNameTagPlayerTwo.Name = "btNameTagPlayerTwo"
         Me.btNameTagPlayerTwo.Size = New System.Drawing.Size(131, 57)
         Me.btNameTagPlayerTwo.TabIndex = 7
-        Me.btNameTagPlayerTwo.Text = "Button1"
+        Me.btNameTagPlayerTwo.Text = "PlayerNickname"
         Me.btNameTagPlayerTwo.UseVisualStyleBackColor = True
         '
         'btPlayerTwoImputBox
@@ -88,12 +91,33 @@ Partial Class LuckyGame
         Me.btPlayerTwoImputBox.Name = "btPlayerTwoImputBox"
         Me.btPlayerTwoImputBox.Size = New System.Drawing.Size(100, 23)
         Me.btPlayerTwoImputBox.TabIndex = 6
+        Me.btPlayerTwoImputBox.Text = "Valor de 1 a 100"
+        '
+        'btStatsDisplayPlayerOne
+        '
+        Me.btStatsDisplayPlayerOne.Location = New System.Drawing.Point(37, 208)
+        Me.btStatsDisplayPlayerOne.Name = "btStatsDisplayPlayerOne"
+        Me.btStatsDisplayPlayerOne.Size = New System.Drawing.Size(125, 197)
+        Me.btStatsDisplayPlayerOne.TabIndex = 8
+        Me.btStatsDisplayPlayerOne.Text = "n/a"
+        Me.btStatsDisplayPlayerOne.UseVisualStyleBackColor = True
+        '
+        'btStatsDisplayPlayerTwo
+        '
+        Me.btStatsDisplayPlayerTwo.Location = New System.Drawing.Point(609, 208)
+        Me.btStatsDisplayPlayerTwo.Name = "btStatsDisplayPlayerTwo"
+        Me.btStatsDisplayPlayerTwo.Size = New System.Drawing.Size(131, 197)
+        Me.btStatsDisplayPlayerTwo.TabIndex = 9
+        Me.btStatsDisplayPlayerTwo.Text = "n/a"
+        Me.btStatsDisplayPlayerTwo.UseVisualStyleBackColor = True
         '
         'LuckyGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btStatsDisplayPlayerTwo)
+        Me.Controls.Add(Me.btStatsDisplayPlayerOne)
         Me.Controls.Add(Me.btNameTagPlayerTwo)
         Me.Controls.Add(Me.btPlayerTwoImputBox)
         Me.Controls.Add(Me.btNameTagPlayerOne)
@@ -116,4 +140,6 @@ Partial Class LuckyGame
     Friend WithEvents btNameTagPlayerOne As Button
     Friend WithEvents btNameTagPlayerTwo As Button
     Friend WithEvents btPlayerTwoImputBox As TextBox
+    Friend WithEvents btStatsDisplayPlayerOne As Button
+    Friend WithEvents btStatsDisplayPlayerTwo As Button
 End Class
